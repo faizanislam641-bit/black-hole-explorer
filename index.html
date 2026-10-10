@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Black Hole Explorer | by FAIZAN</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-ring"></div>
+  <h2>Initializing Space...</h2>
+</div>
+
+<!-- Top Header -->
+<header class="top-bar">
+  <div class="brand">🌌 BLACK HOLE EXPLORER</div>
+  <div class="developer">Developed by <span>FAIZAN</span></div>
+</header>
+
+<!-- Control Panel -->
+<div class="control-panel">
+  <button id="btnZoomIn" title="Zoom In">🔍+</button>
+  <button id="btnZoomOut" title="Zoom Out">🔍−</button>
+  <button id="btnReset" title="Reset View">⟳</button>
+  <button id="btnPause" title="Pause/Play">⏸</button>
+  <button id="btnToggleLabels" title="Toggle Labels">🏷</button>
+  <button id="btnToggleOrbits" title="Toggle Orbits">⭕</button>
+  <button id="btnInfo" title="Info">ℹ</button>
+</div>
+
+<!-- Object Spawner -->
+<div class="spawn-panel">
+  <h4>Drop Object into Black Hole</h4>
+  <button class="spawn-btn" data-type="astronaut">👨‍🚀 Astronaut</button>
+  <button class="spawn-btn" data-type="rocket">🚀 Rocket</button>
+  <button class="spawn-btn" data-type="asteroid">☄️ Asteroid</button>
+  <button class="spawn-btn" data-type="planet">🪐 Mini Planet</button>
+  <button class="spawn-btn" data-type="star">⭐ Star</button>
+  <button class="spawn-btn" data-type="satellite">🛰️ Satellite</button>
+</div>
+
+<!-- Info Panel -->
+<div id="infoPanel" class="info-panel hidden">
+  <button id="closeInfo">✕</button>
+  <h3>About This Simulator</h3>
+  <p>This is a real-time 2D gravity simulation. Drag objects toward the black hole to observe spaghettification, event horizon, and accretion disk behavior.</p>
+  <p><b>Controls:</b> Drag to pan • Scroll/Pinch to zoom • Click object to inspect</p>
+  <p><b>Developed by FAIZAN</b></p>
+</div>
+
+<!-- Object Inspector -->
+<div id="inspector" class="inspector hidden">
+  <h4 id="inspectName">Object</h4>
+  <p id="inspectInfo"></p>
+</div>
+
+<!-- Canvas -->
+<canvas id="space"></canvas>
+
+<!-- Bottom Footer -->
+<footer class="footer">
+  <div class="footer-brand">
+    <h3>🌌 BLACK HOLE EXPLORER</h3>
+    <p>Developed by <b>FAIZAN</b></p>
+  </div>
+  <div class="footer-links">
+    <a href="https://www.facebook.com/Faizanislam.999" target="_blank" class="link-btn fb">
+      <span>📘</span> Facebook
+    </a>
+    <a href="https://wa.me/8801646313289" target="_blank" class="link-btn wa">
+      <span>💬</span> WhatsApp
+    </a>
+    <a href="https://faizanislam641-bit.github.io/" target="_blank" class="link-btn pf">
+      <span>🌐</span> Portfolio
+    </a>
+  </div>
+  <div class="footer-copy">
+    © 2025 FAIZAN — All Rights Reserved
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
